@@ -54,7 +54,22 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<span class="date">April 25, 2017</span>
+									<span class="date"><div id="current-time"></div>
+									<script>
+									    var curDate = new Date();
+
+									    // Ngày hiện tại
+									    var curDay = curDate.getDate();
+
+									    // Tháng hiện tại
+									    var curMonth = curDate.getMonth() + 1;
+
+									    // Năm hiện tại
+									    var curYear = curDate.getFullYear();
+
+									    // Gán vào thẻ HTML
+									    document.getElementById('current-time').innerHTML = curDay + "/" + curMonth + "/" + curYear;
+									</script></span>
 									<h2><a href="#">旅游业的数据<br /></a></h2>
 									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
 									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
